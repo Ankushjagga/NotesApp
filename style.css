@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+ h3{
+    font-size: 40px;
+    margin: 17px;
+}
+h4{
+    margin: 10px 0;
+    font-size: 20px;
+}
+i{
+    margin-left: 6px;
+}
+.navbar input{
+     background-color: white;
+    border-radius: 6px;
+    width: 50%; 
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ margin-top: 15px;
+ width: 100%;
+}
+
+.addnotes{
+    width: 1080px;
+ margin: auto;
+ margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+
+}
+.addnotes input,textarea{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    outline: none;
+    width: 80%;
+    font-weight:bold;
+
+}
+.description{
+    margin-top: 15px;
+    margin-bottom: 6px;
+    height: 6rem;
+    resize:none;
+}
+.addtxt{
+    height: 1.5rem;
+}
+.btn{
+    padding: 15px;
+    margin-top: 10px;
+    background-color:#696969;
+margin-bottom: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    width: 20%;
+
+}
+.btn:hover,.note-btn:hover{
+    cursor: pointer;
+    background-color: 	grey;
+    transition: all .1s ease-in-out;
+}
+.btn:active,.note-btn:active{
+    transform: translateY(4px);
+}
+
+
+.note-make{
+    margin-left: 30px;
+    padding: 10px;
+    border: 2px solid white;
+width: 28%;
+display: flex;
+flex-direction: column;
+margin-bottom: 30px;
+overflow-wrap: break-word;
+
+}
+.note-make>h4{
+    border-bottom: 1px solid white;
+width: 50%;
+}
+.note-make::-webkit-scrollbar{
+    display: none;
+}
+.note-made{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.buttons{
+    margin-left: 15px;
+justify-content:end;
+align-items: center;
+display: flex;
+}
+.note-btn{
+    background-color:#696969;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+    width: 30%;
+}
+.heading{
+   margin-left: 50px;
+    margin-top: 30px;
+}
+#p{
+    margin: 10px;
+    padding: 5px;
+}
+@media only screen and (max-width: 1024px){
+.addnotes{
+    width: 80%;
+}
+.navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    }
+h3{
+    font-size: 45px;
+}
+#searchTxt{
+    width: 80%;
+}
+.note-make{
+    width: 60%;
+    margin: 30px 0px;
+
+}
+.note-btn{
+    width: 52%;
+}
+
+.btn{
+    width: 32%;
+}
+h1{
+    font-size: 21px;
+}
+}
+
+@media only screen and (max-width: 500px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    }
+        #searchTxt{
+            width: 80%;
+        }
+        .addnotes{
+            margin: auto;
+            margin-top: 30px;
+            width: 300px;
+        }
+        .note-make{
+            width: 60%;
+            margin: 30px 0px;
+
+        }
+        .note-btn{
+            width: 52%;
+        }
+        h3{
+            font-size: 33px;
+        }
+        .btn{
+            width: 32%;
+        }
+        h1{
+            font-size: 21px;
+        }
+    }
+    @media only screen and (max-width: 320px){
+        h3{
+            font-size: 30px;
+        }
+        .addnotes{
+            width: 250px;
+        }
+        .btn{
+            width: 40%;
+        }
+        .note-make{
+            margin: 10px 0px;
+        }
+        .note-made{
+            margin: 30px 0;
+        }
+        h1{
+            font-size: 21px;
+        }
+        .note-btn{
+            width: 57%;
+        }
+    }
